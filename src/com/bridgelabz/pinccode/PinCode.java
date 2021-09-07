@@ -11,7 +11,7 @@ public class PinCode {
 		}
 		public static void checkValidFirstName(String pincode) 
 		{
-			String regexCheck= "[0-9]{6}";
+			String regexCheck= "^[0-9]{6}$";
 			Pattern pattern = Pattern.compile(regexCheck);
 			Matcher obj= pattern.matcher(pincode);
 			if(obj.matches()==true)
